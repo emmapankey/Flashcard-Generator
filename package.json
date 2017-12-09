@@ -1,0 +1,23 @@
+{
+  "name": "flashcardgenerator",
+  "version": "1.0.0",
+  "description": "basic flashcard generator",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emmapankey/Flashcard-Generator.git"
+  },
+  "author": "emma pankey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emmapankey/Flashcard-Generator/issues"
+  },
+  "homepage": "https://github.com/emmapankey/Flashcard-Generator#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "inquirer": "^4.0.1"
+  }
+}
