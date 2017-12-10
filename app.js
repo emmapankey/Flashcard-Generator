@@ -133,6 +133,7 @@ function studyFlashcards() {
             questionAnswer = parsedQuestion.cloze;
         }
 
+        //ask user for their guess
         inquirer.prompt([{
             name: "userGuess",
             message: questionText

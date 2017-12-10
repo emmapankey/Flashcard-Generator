@@ -1,1 +1,0 @@
-{"type":"Basic Card","front":"What is your name? EMMA","back":"emma"}   ,   {"type":"Cloze Card","fullText":"Your name is Emma.","cloze":"emma","partial":"Your name is ...."}   ,   {"type":"Basic Card","front":"Layla's middle name is Love.","back":"love"}   ,   
