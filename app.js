@@ -137,7 +137,7 @@ function studyFlashcards() {
             name: "userGuess",
             message: questionText
         }]).then(function (answer) {
-            if (answer.userGuess === questionAnswer) {
+            if (answer.userGuess.toLowerCase() === questionAnswer) {
                 console.log("\nCorrect!\n")
                 count++;
                 if (count < questions.length - 1) {

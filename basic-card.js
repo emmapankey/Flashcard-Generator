@@ -10,7 +10,7 @@ function BasicCard (front, back) {
         var log = {
             type: "Basic Card",
             front: this.front,
-            back: this.back
+            back: this.back.toLowerCase()
         };
 
         // add card object to log.txt file

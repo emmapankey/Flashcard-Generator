@@ -11,7 +11,7 @@ function ClozeCard(fullText, cloze) {
         var log = {
             type: "Cloze Card",
             fullText: this.fullText,
-            cloze: this.cloze,
+            cloze: this.cloze.toLowerCase(),
             partial: this.partial
         };
 
