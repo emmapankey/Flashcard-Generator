@@ -119,12 +119,27 @@ function studyFlashcards() {
         }
 
         var questions = data.split('   ,   ');
-        var question = questions[count];
-        // console.log(question);
-        var parsedQuestion = JSON.parse(question);
-        // console.log(parsedQuestion);
 
-        if (parsedQuestion.type === "Basic Card") {
+        // console.log(questions.length);
+
+        var question = questions[count];
+        //console.log(questions);
+        // console.log(question);
+        var parsedQuestion = null;
+        
+
+        //valid JSON data is expected in the log.txt file. If the file is empty then the exception will be caught.
+        try {
+            parsedQuestion = JSON.parse(question);
+        }
+        catch(e) {
+            console.log("You have not created any flashcards yet.");            
+        }
+
+        if (parsedQuestion === null) {
+           return;
+        }
+        else if (parsedQuestion.type === "Basic Card") {
             questionText = parsedQuestion.front;
             questionAnswer = parsedQuestion.back;
         }
@@ -141,6 +156,8 @@ function studyFlashcards() {
             if (answer.userGuess.toLowerCase() === questionAnswer) {
                 console.log("\nCorrect!\n")
                 count++;
+                
+                //cycle through the created flashcards until all have been answered
                 if (count < questions.length - 1) {
                     studyFlashcards();
                 }
