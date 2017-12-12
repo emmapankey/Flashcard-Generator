@@ -67,7 +67,7 @@ function makeBasicCard() {
     })
 }
 
-//function to prompt user to create the text for a clozde flashcard and instantiate a new instance of the ClozeCard object
+//function to prompt user to create the text for a cloze flashcard and instantiate a new instance of the ClozeCard object
 function makeClozeCard() {
     inquirer.prompt([{
         name: "fullText",
