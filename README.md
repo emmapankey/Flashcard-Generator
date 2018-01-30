@@ -10,7 +10,19 @@ First clone this repository:
 https://github.com/emmapankey/Flashcard-Generator
 ```
 
-### Installing
+## Installing
+
+#### Node.js and npm
+Go to the Node.js site: https://nodejs.org/en. Click the download button, and run through the installation file.
+When you install node.js, npm is automatically installed.
+To check if you have Node.js installed, run this command in your terminal:
+```
+node -v
+```
+To confirm that you have npm installed you can run this command in your terminal:
+```
+npm -v
+```
 
 Execute the following commands for installing the filesystem and inquirer packages:
 
@@ -51,4 +63,8 @@ This option allows a user to quiz themselves with all of the flashcards they hav
 is displayed as a question and for ```ClozeCards``` the partial question text is displayed. The user's response is compared to the card back
 and cloze portion respectively and the user is notified if their guess is correct or not. When all the existing flashcards have been
 used the user is returned to the starting prompt.
+
+## Author
+
+**Emma Pankey** (https://github.com/emmapankey)
 
